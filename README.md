@@ -1,7 +1,7 @@
 ```typescript
-type WelcomeMessage = 'Hello World!' | 'Habari dunia!' | 'Uhoro the!';
+type GreetingMessage = 'Hello World!' | 'Habari dunia!' | 'Uhoro the!';
 
-const greet = (possibleGreetings: WelcomeMessage[]) => {
+const greet = (possibleGreetings: GreetingMessage[]) => {
   const message = possibleGreetings[Math.floor(Math.random() * possibleGreetings.length)];
   console.log(message);
 } 
